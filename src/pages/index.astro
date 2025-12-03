@@ -20,7 +20,6 @@ const metadata = {
 
 <Layout metadata={metadata}>
   <!-- Hero Widget ******************* -->
-
   <Hero
     actions={[
       {
@@ -41,12 +40,12 @@ const metadata = {
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">Niieux</span> <span class="hidden xl:inline">is a Debian 13-based Linux distro designed for beginners and developers, featuring a modified GNOME desktop, no bloatware, and Flatpak support.</span>
+        <span class="font-semibold">Niieux</span> <span class="hidden xl:inline">is a Debian 13-based Linux distro designed for beginners and developers, featuring a modified GNOME desktop, no bloatwa[...]</span>
+      </span>
     </Fragment>
   </Hero>
 
   <!-- Features Widget *************** -->
-
   <Features
     id="features"
     tagline="Features"
@@ -78,12 +77,11 @@ const metadata = {
       },
     ]}
   />
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
-
+  <!-- Content Widget **************** -->
   <Content
     isReversed
     tagline="Customizing Niieux"
@@ -102,7 +100,7 @@ const metadata = {
       {
         title: 'Create your own theme',
         description:
-          'You can even create your own theme through the online theme maker website and download it. You will download it as a JSON file which you can right click > open with > Niieux Theme Installer.',
+          'You can even create your own theme through the online theme maker website and download it. You will download it as a JSON file which you can right click > open with > Niieux Theme Installer[...]',
       },
     ]}
     image={{
@@ -110,15 +108,12 @@ const metadata = {
       alt: 'Niieux Theme Switcher Screenshot',
     }}
   >
-
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-
   </Content>
-  <!-- Content Widget **************** -->
 
+  <!-- Content Widget **************** -->
   <Content
     isReversed
     tagline="Installing applications on Niieux"
@@ -145,9 +140,9 @@ const metadata = {
       alt: 'Niieux App Center screenshot',
     }}
   >
+  </Content>
 
   <!-- Content Widget **************** -->
-
   <Content
     isReversed
     isAfterContent
@@ -178,21 +173,19 @@ const metadata = {
     }}
   >
     <Fragment slot="content">Designed to foster growth and success.</Fragment>
-
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
   <!-- Steps Widget ****************** -->
-
   <Steps
     title="Get your dream website up and running in no time with AstroWind."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Download</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already s[...]",
         icon: 'tabler:package',
       },
       {
@@ -204,7 +197,7 @@ const metadata = {
       {
         title: 'Step 3: <span class="font-medium">Customize styles</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.[...]',
         icon: 'tabler:paint',
       },
       {
@@ -219,61 +212,21 @@ const metadata = {
   />
 
   <!-- Features2 Widget ************** -->
-
   <Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
-        icon: 'flat-color-icons:template',
-      },
-      {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
-        icon: 'flat-color-icons:gallery',
-      },
-      {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
-        icon: 'flat-color-icons:approval',
-      },
-      {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
-      },
-      {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
-      },
-      {
         title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        description: 'Completely free but here free does not just mean the price but it also means freedom.',
         icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
       },
       {
         title: 'Contact',
         description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+          'Contact us at support@niieux.com for support or contact packages@niieux.com for help with Niieux applications.',
         icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
       },
     ]}
   >
@@ -283,7 +236,6 @@ const metadata = {
   </Features2>
 
   <!-- HighlightedPosts Widget ******* -->
-
   <BlogLatestPosts
     title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
@@ -293,7 +245,6 @@ const metadata = {
   />
 
   <!-- FAQs Widget ******************* -->
-
   <FAQs
     title="Frequently Asked Questions"
     subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
@@ -301,69 +252,39 @@ const metadata = {
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'Why Niieux?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "Niieux is faster and more customizable than most Linux distros that use GNOME, Niieux v1 is faster than Zorin OS 17 Core and Ubuntu 25.04 Desktop while still having tons of customizations availible.",
       },
       {
-        title: 'What do I need to start?',
+        title: 'How do I install ?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'We offer a easy installation guide at https://github.com/Niieux/docs/install-guide.md',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: 'What do I do if I need help using Niieux?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "Feel free to contact support@niieux.com for support or open a issue on our Github",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "I need help making a Theme on the Theme Maker?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "Visit https://github.com/Niieux/docs/theme-maker-guide.md for a amazing guide on using the Theme maker.",
       },
-      {
-        title: 'What is something that you would like to try again?',
-        description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
-      },
-      {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
-        description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
-    ]}
-  />
-
-  <!-- Stats Widget ****************** -->
-
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
     ]}
   />
 
   <!-- CallToAction Widget *********** -->
-
   <CallToAction
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/arthelokyo/astrowind',
+        text: 'Install now',
+        href: 'https://iso.niieux.com',
         target: '_blank',
         icon: 'tabler:download',
       },
     ]}
   >
-    <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
-    </Fragment>
-
-    <Fragment slot="subtitle">
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
-      waste more time! :P
-    </Fragment>
   </CallToAction>
 </Layout>
